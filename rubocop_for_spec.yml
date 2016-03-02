@@ -1,6 +1,3 @@
-inherit_from:
-  - .rubocop.yml
-
 # Allow using `{...}` anytime
 Style/BlockDelimiters:
   Enabled: false
