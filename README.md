@@ -1,0 +1,2 @@
+# pixta-rubocop
+あれ
