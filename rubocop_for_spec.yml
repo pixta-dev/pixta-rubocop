@@ -1,0 +1,6 @@
+inherit_from:
+  - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop.yml
+
+# Allow using `{...}` anytime
+Style/BlockDelimiters:
+  Enabled: false
