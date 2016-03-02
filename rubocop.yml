@@ -48,3 +48,7 @@ Metrics/AbcSize:
 # Prefer double_quotes strings unless your string literal contains escape chars
 StringLiterals:
   EnforcedStyle: double_quotes
+
+# Prefer raise over fail for exceptions
+Style/SignalException:
+  EnforcedStyle: only_raise
