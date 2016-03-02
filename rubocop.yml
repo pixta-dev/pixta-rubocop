@@ -1,16 +1,3 @@
-AllCops:
-  Include:
-    - '**/Rakefile'
-    - '**/config.ru'
-  Exclude:
-    - 'vendor/**/*'
-    - 'bin/*'
-    - 'config/**/*'
-    - 'Gemfile'
-    - 'db/**/*'
-    - 'deploy/**/*'
-    - 'frontend/**/*'
-
 Rails:
   Enabled: true
 
