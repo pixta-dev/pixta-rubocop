@@ -1,5 +1,5 @@
 inherit_from:
-  - ../.rubocop.yml
+  - .rubocop.yml
 
 # Allow using `{...}` anytime
 Style/BlockDelimiters:
