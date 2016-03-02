@@ -56,10 +56,11 @@ AllCops:
 ```
 
 ### spec/.rubocop.yml
-Inherit `rubocop_for_spec.yml`.
+Inherit parental `.rubocop.yml` and `rubocop_for_spec.yml`.
 
 ```yaml
 inherit_from:
+  - ../.rubocop.yml
   - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop_for_spec.yml
 ```
 
