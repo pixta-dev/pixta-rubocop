@@ -2,6 +2,6 @@ source "https://rubygems.org"
 
 ruby "2.2.4"
 
-group :development, :test do
+group :development do
   gem "rubocop"
 end

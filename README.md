@@ -14,7 +14,7 @@ You need to add or modify the following files to use our rubocop configuration.
 Add `robocop` to your repository.
 
 ```ruby
-group :development, :test do
+group :development do
   gem "rubocop"
 end
 ```
@@ -68,16 +68,18 @@ inherit_from:
 Remove `.rubocop-http*` files so that `rubocop` doesn't read cached configuration files.
 
 ```ruby
-require 'rubocop/rake_task'
+if Rails.env.development?
+  require 'rubocop/rake_task'
 
-RuboCop::RakeTask.new
+  RuboCop::RakeTask.new
 
-task :remove_rubocop_cache do
-  sh "rm .rubocop-http*"
+  task :remove_rubocop_cache do
+    Dir.glob(".rubocop-http*").each { |file_name| sh "rm #{file_name}" }
+  end
+
+  Rake::Task["rubocop"].enhance(%i(remove_rubocop_cache))
+  Rake::Task["rubocop:auto_correct"].enhance(%i(remove_rubocop_cache))
 end
-
-Rake::Task["rubocop"].enhance(%i(remove_rubocop_cache))
-Rake::Task["rubocop:auto_correct"].enhance(%i(remove_rubocop_cache))
 ```
 
 ## Usage
