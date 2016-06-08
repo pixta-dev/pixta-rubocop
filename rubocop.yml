@@ -52,3 +52,7 @@ StringLiterals:
 # Prefer raise over fail for exceptions
 Style/SignalException:
   EnforcedStyle: only_raise
+
+# Allow empty condition in case statements
+Style/EmptyCaseCondition:
+  Enabled: false
