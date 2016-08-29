@@ -2,22 +2,14 @@ inherit_from:
   - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop.yml
 
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: TODO
   Include:
     - '**/Rakefile'
     - '**/config.ru'
   Exclude:
-    - 'vendor/**/*'
+    - 'Gemfile'
     - 'bin/*'
     - 'config/**/*'
-    - 'Gemfile'
     - 'db/**/*'
     - 'deploy/**/*'
-    - 'frontend/**/*'
-    - 'admin/vendor/**/*'
-    - 'admin/bin/*'
-    - 'admin/config/**/*'
-    - 'admin/Gemfile'
-    - 'admin/db/**/*'
-    - 'admin/lib/admin/version.rb'
-    - 'admin/lib/admin/engine.rb'
+    - 'vendor/**/*'
