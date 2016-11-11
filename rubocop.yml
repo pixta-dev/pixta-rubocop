@@ -41,9 +41,13 @@ IfUnlessModifier:
 MethodLength:
   Max: 20
 
-# Tuned to MethodLength
+# Tune to MethodLength
 Metrics/AbcSize:
   Max: 30
+
+# Tune to MethodLength
+Metrics/ClassLength:
+  Max: 200
 
 # Prefer double_quotes strings unless your string literal contains escape chars
 StringLiterals:
