@@ -60,3 +60,7 @@ Style/SignalException:
 # Allow empty condition in case statements
 Style/EmptyCaseCondition:
   Enabled: false
+
+# Prefer trailing comma in array and hash literals
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
