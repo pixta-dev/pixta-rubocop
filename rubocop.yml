@@ -68,3 +68,11 @@ Style/TrailingCommaInArguments:
 # Prefer trailing comma in array and hash literals
 Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
+
+# Prefer parentheses for almost all percent literals
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%I': '()'
+    '%w': '()'
+    '%W': '()'
