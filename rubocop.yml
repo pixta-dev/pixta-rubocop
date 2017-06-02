@@ -33,9 +33,9 @@ FormatString:
 LineLength:
   Max: 100
 
-# Whatever we should use "postfix if/unless"
+# Use "postfix if/unless" if the lenght is less than this
 IfUnlessModifier:
-  MaxLineLength: 100
+  MaxLineLength: 80
 
 # Maximum method length
 MethodLength:
