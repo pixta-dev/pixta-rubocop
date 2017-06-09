@@ -76,3 +76,13 @@ Style/PercentLiteralDelimiters:
     '%I': '()'
     '%w': '()'
     '%W': '()'
+
+# Allow `has_` as prefix of predicate methods
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+    - have_
+
+# Prefer `has_?` style for Hash methods
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
