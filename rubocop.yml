@@ -29,14 +29,6 @@ Style/SingleLineBlockParams:
 FormatString:
   EnforcedStyle: sprintf
 
-# Maximum line length
-LineLength:
-  Max: 100
-
-# Use "postfix if/unless" if the lenght is less than this
-IfUnlessModifier:
-  MaxLineLength: 80
-
 # Maximum method length
 MethodLength:
   Max: 20
@@ -48,6 +40,10 @@ Metrics/AbcSize:
 # Tune to MethodLength
 Metrics/ClassLength:
   Max: 200
+
+# Maximum line length
+Metrics/LineLength:
+  Max: 100
 
 # Allow `has_` as prefix of predicate methods
 Naming/PredicateName:
