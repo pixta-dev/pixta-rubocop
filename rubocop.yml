@@ -67,8 +67,12 @@ Style/EmptyCaseCondition:
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
-# Prefer trailing comma in array and hash literals
-Style/TrailingCommaInLiteral:
+# Prefer trailing comma in array literals
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+# Prefer trailing comma in hash literals
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 # Prefer parentheses for almost all percent literals
