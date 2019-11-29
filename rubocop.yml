@@ -47,7 +47,7 @@ Metrics/LineLength:
 
 # Allow `has_` as prefix of predicate methods
 Naming/PredicateName:
-  NamePrefixBlacklist:
+  ForbiddenPrefixes:
     - is_
     - have_
 
