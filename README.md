@@ -33,7 +33,6 @@ inherit_mode:
 AllCops:
   TargetRubyVersion: TODO
   Include:
-    - '**/Rakefile'
     - '**/config.ru'
   Exclude:
     - 'Gemfile'
@@ -41,7 +40,6 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
     - 'deploy/**/*'
-    - 'vendor/**/*'
 ```
 
 ### spec/.rubocop.yml
