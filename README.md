@@ -32,8 +32,6 @@ inherit_mode:
 
 AllCops:
   TargetRubyVersion: TODO
-  Include:
-    - '**/config.ru'
   Exclude:
     - 'Gemfile'
     - 'bin/*'
