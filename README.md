@@ -22,6 +22,14 @@ Inherit `rubocop.yml` and add specific settings for each repository like `AllCop
 inherit_from:
   - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop.yml
 
+# Normally additional configs of AllCops/Include and AllCops/Ecxlude override to RuboCops's defaults.
+# But you'd like to apply both RuboCops's defaults and addtional configs of AllCops/Include and AllCops/Ecxlude.
+# ref: https://docs.rubocop.org/en/stable/configuration/#unusual-files-that-would-not-be-included-by-default
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
 AllCops:
   TargetRubyVersion: TODO
   Include:

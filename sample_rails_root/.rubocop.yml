@@ -1,6 +1,11 @@
 inherit_from:
   - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop.yml
 
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
 AllCops:
   TargetRubyVersion: TODO
   Include:
