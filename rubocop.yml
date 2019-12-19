@@ -1,6 +1,3 @@
-Rails:
-  Enabled: true
-
 # Accept single-line methods with no body
 SingleLineMethods:
   AllowIfMethodIsEmpty: true
