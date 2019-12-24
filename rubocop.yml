@@ -29,7 +29,11 @@ Style/SingleLineBlockParams:
 FormatString:
   EnforcedStyle: sprintf
 
-# Maximum method length
+# Maximum line length
+Layout/LineLength:
+  Max: 100
+
+  # Maximum method length
 MethodLength:
   Max: 20
 
@@ -40,10 +44,6 @@ Metrics/AbcSize:
 # Tune to MethodLength
 Metrics/ClassLength:
   Max: 200
-
-# Maximum line length
-Metrics/LineLength:
-  Max: 100
 
 # Allow `has_` as prefix of predicate methods
 Naming/PredicateName:
