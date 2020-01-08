@@ -42,7 +42,7 @@ Metrics/ClassLength:
   Max: 200
 
 # Maximum line length
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
 # Allow `has_` as prefix of predicate methods
