@@ -1,6 +1,4 @@
-require:
-  - rubocop-other-extension
-  - rubocop-rails
+require: rubocop-rails
   
 # Rails:
   # Enabled: true
