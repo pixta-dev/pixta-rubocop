@@ -1,9 +1,4 @@
-require: rubocop-rails
-  
-# Rails:
-  # Enabled: true
-
-# Accept single-line methods with no body
+  # Accept single-line methods with no body
 SingleLineMethods:
   AllowIfMethodIsEmpty: true
 
