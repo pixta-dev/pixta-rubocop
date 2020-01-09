@@ -1,6 +1,9 @@
+require:
+  - rubocop-other-extension
+  - rubocop-rails
   
-Rails:
-  Enabled: true
+# Rails:
+  # Enabled: true
 
 # Accept single-line methods with no body
 SingleLineMethods:
