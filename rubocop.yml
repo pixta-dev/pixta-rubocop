@@ -1,23 +1,23 @@
 require: rubocop-rails
 
 # Accept single-line methods with no body
-SingleLineMethods:
+Style/SingleLineMethods:
   AllowIfMethodIsEmpty: true
 
 # Top-level documentation of classes and modules are needless
-Documentation:
+Style/Documentation:
   Enabled: false
 
 # Allow to chain of block after another block that spans multiple lines
-MultilineBlockChain:
+Style/MultilineBlockChain:
   Enabled: false
 
 # Allow `->` literal for multi line blocks
-Lambda:
+Style/Lambda:
   Enabled: false
 
 # Both nested and compact are okay
-ClassAndModuleChildren:
+Style/ClassAndModuleChildren:
   Enabled: false
 
 # Specifying param names is unnecessary
@@ -25,11 +25,11 @@ Style/SingleLineBlockParams:
   Enabled: false
 
 # Prefer Kernel#sprintf
-FormatString:
+Style/FormatString:
   EnforcedStyle: sprintf
 
 # Maximum method length
-MethodLength:
+Metrics/MethodLength:
   Max: 20
 
 # Tune to MethodLength
@@ -51,7 +51,7 @@ Naming/PredicateName:
     - have_
 
 # Prefer double_quotes strings unless your string literal contains escape chars
-StringLiterals:
+Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 # Prefer raise over fail for exceptions
