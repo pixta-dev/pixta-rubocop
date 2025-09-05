@@ -56,6 +56,3 @@ inherit_from:
   - ../.rubocop.yml
   - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/refs/heads/3.4/rubocop_for_spec.yml
 ```
-
-## Sample
-A sample rails project adopting our RuboCop configuration is placed in [pixta-rubocop/sample_rails_root](https://github.com/pixta-dev/pixta-rubocop/tree/master/sample_rails_root).
