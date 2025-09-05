@@ -1,4 +1,5 @@
-require: rubocop-rails
+plugins:
+  - rubocop-rails
 
 # Accept single-line methods with no body
 Style/SingleLineMethods:
@@ -45,7 +46,7 @@ Layout/LineLength:
   Max: 100
 
 # Allow `has_` as prefix of predicate methods
-Naming/PredicateName:
+Naming/PredicatePrefix:
   ForbiddenPrefixes:
     - is_
     - have_
