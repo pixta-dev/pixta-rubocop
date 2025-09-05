@@ -20,7 +20,7 @@ Inherit `rubocop.yml` and add specific settings for each repository like `AllCop
 
 ```yaml
 inherit_from:
-  - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop.yml
+  - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/refs/heads/3.4/rubocop.yml
 
 # Normally additional configs of AllCops/Include and AllCops/Exclude override to RuboCops's defaults.
 # But you'd like to apply both RuboCops's defaults and addtional configs of AllCops/Include and AllCops/Exclude.
@@ -31,13 +31,21 @@ inherit_mode:
     - Exclude
 
 AllCops:
-  TargetRubyVersion: TODO
+  TargetRubyVersion: 3.4
+  NewCops: disable
+  SuggestExtensions: false
   Exclude:
-    - 'Gemfile'
     - 'bin/*'
     - 'config/**/*'
     - 'db/**/*'
-    - 'deploy/**/*'
+    - 'frontend/**/*'
+    - 'spec/factories/*'
+    - 'vendor/**/*'
+    - 'Gemfile'
+
+# Allow Japanese comments
+Style/AsciiComments:
+  Enabled: false
 ```
 
 ### spec/.rubocop.yml
@@ -46,7 +54,7 @@ Inherit parental `.rubocop.yml` and `rubocop_for_spec.yml`.
 ```yaml
 inherit_from:
   - ../.rubocop.yml
-  - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/master/rubocop_for_spec.yml
+  - https://raw.githubusercontent.com/pixta-dev/pixta-rubocop/refs/heads/3.4/rubocop_for_spec.yml
 ```
 
 ## Sample
